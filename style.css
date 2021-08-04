@@ -1,0 +1,840 @@
+/* Stylesheet for marching wireframe */
+
+* {
+	box-sizing: border-box;
+}
+/*---------------------------------------------------------------------------------	
+
+
+/*---------------------------------------------------------------------------------
+/* Search Bar - Navigation List - Home - Join - About - Phases - Contact */
+header {
+	background-color: #000000;
+	width: 1000px;
+	margin: 0 auto;
+	line-height: 10px;
+}
+nav {
+	height: 70px
+}
+nav ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	padding: 15px;
+}
+.navform {
+	padding-top: 10px;
+	padding-left: 7px;
+}
+.navtext {
+	padding: 15px;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+}
+a {
+	text-decoration: none;
+	font-family: abeatbyKai;
+	font-size: 11pt;
+	color: #ffffff;
+}
+a:hover {
+	color: red;
+	font-size: 13pt;
+}
+
+
+/*---------------------------------------------------------------------------------
+/* MARCHING CANTERBURY LOGO */
+.logo {
+	background-color: #ffffff;
+	height: 60px;
+	padding-top: 30px;
+	padding-bottom: 0px;
+}
+.logo img {
+	width: 280px;
+	position: absolute;
+	z-index: 99;
+}
+
+
+
+/*---------------------------------------------------------------------------------
+/*BANNER CONTAINER */
+.banner {
+	width: 1000px;
+	margin: 0 auto;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+}
+.banner img {
+	height: 500px;
+}
+.banner video {
+	width: 1000px;
+}
+
+
+
+/*---------------------------------------------------------------------------------
+/* VIDEO BANNER */
+.videobanner {
+	width: 1000px;
+	height: 560px;
+	margin: 0 auto;
+	list-style-type: none;
+	position: relative;
+}
+.videobanner img {
+	width: 1000px;
+}
+.videobanner video {
+	width: 1000px;
+	position: absolute;
+}
+
+
+
+/*---------------------------------------------------------------------------------
+/* CONTACT US BUTTON */
+.btn {
+	border: none;
+	color: white;
+	padding: 12px 28px;
+	cursor: pointer;
+	border-radius: 9px;
+	border: 1px solid #c30000;
+	position: absolute;
+	margin:60px;
+	margin-top: 37px;
+}
+.contactus {
+	background-color: #ff0000;
+} 
+.contactus a {
+	font-family:helvetica;
+	font-size: 15px;
+	color: white;
+}
+.contactus:hover {
+	background: #c30000;
+	left: -2px;
+	position: absolute;
+}
+.contactus:hover a {
+	font-family:helvetica;
+	font-size: 17px;
+	color: white;	
+}
+
+
+
+/*---------------------------------------------------------------------------------
+/* MAIN PAGE TITLE "Welcome to Marching Canterbury" */
+.mainheading {
+	width: 1000px;
+	height: 90px;
+	background-color: #000000;
+	font-family: abeatbyKai;
+	font-weight: normal;
+	font-size: 16pt;
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 20px; 
+}
+.mainheading2 {
+	width: 1000px;
+	height: 120px;
+	background-color: #ffffff;
+	font-family: abeatbyKai;
+	font-weight: normal;
+	font-size: 18pt;
+	color: #000000;
+	text-align: center;
+	vertical-align: middle;
+	line-height:70px;
+}	
+
+
+
+/*---------------------------------------------------------------------------------
+/* RED HEADING FONTS */
+.redheadingfont {
+	width: 270px;
+	height: 40px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-family: abeatbyKai;
+	font-size: 18pt;
+	color: #ff0000;
+}
+.redheadingfont2 {
+	background-color: white;
+	width: 270px;
+	height: 50px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-family: abeatbyKai;
+	font-size: 18pt;
+	color: #ff0000;
+}
+
+
+
+/*---------------------------------------------------------------------------------
+/* RED LINE GRAPHIC SETTINGS */
+.redline {
+	width: 1000px;
+	height: 100px;
+	position: relative;
+}
+.redline img {
+	width: 1000px;
+	height: 100px;
+}
+.thankyouredline {
+	width: 1000px;
+	height: 100px;
+	background-color: white;
+}
+.thankyouredline img {
+	width: 1000px;
+	height: 100px;
+}
+.thankyouredblackline {
+	width: 1000px;
+	height: 33px;
+	background-color: white;
+}
+.thankyouredblackline img {
+	width: 1000px;
+	height: 100px;
+}
+.thankyouredblackline {
+	width: 1000px;
+	height: 33px;
+	background-color: white;
+}
+.thankyouredblackline img {
+	width: 1000px;
+	height: 100px;
+}
+
+
+
+/*---------------------------------------------------------------------------------
+/* SECTION 1 */
+section {
+	background-color: #000000;
+	width: 1000px;
+	margin: 0 auto;
+	list-style-type: none;
+	display: flex;
+	justify-content: center-left;
+}
+.card {
+	width: 270px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-family: helvetica;
+	font-size: 12pt;
+	line-height: 15pt;
+	color: #ffffff;
+}
+.card img {
+	height: 270px;
+}
+.cardtext {
+	width: 270px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-family: helvetica;
+	font-size: 12pt;
+	line-height: 15pt;
+	color: #ffffff;
+	justify-content: justify;
+	padding-bottom: 80px;
+	position: relative;
+}
+
+
+
+/*---------------------------------------------------------------------------------
+/* SECTION 2 */
+.section2 {
+	background-color: white;
+	width: 1000px;
+	margin: 0 auto;
+	list-style-type: none;
+	display: flex;
+	justify-content: center-left;
+}
+.card2 {
+	background-color: white;
+	width: 270px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-family: helvetica;
+	font-size: 12pt;
+	line-height: 15pt;
+	color: #000000;
+}
+.card2 img {
+	height: 270px;
+}
+.cardtext2 {
+	background-color: white;
+	padding-bottom:30px;
+	width: 270px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-family: helvetica;
+	font-size: 12pt;
+	line-height: 15pt;
+	color: #000000;
+}
+
+
+
+/*---------------------------------------------------------------------------------
+/* FOOTER */
+
+.footer-justification {
+	margin-top: 120px;
+}
+.footerheading {
+	font-family: abeatbyKai;
+	height: 20px;
+	font-size: 18pt;
+	color: #ff0000;
+	justify-content: justify-left;
+}
+.footersection3 {
+	background-color: black;
+	padding-top: 35px;
+	height: 250px;
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 50px;
+	list-style-type: none;
+	display: flex;
+}
+.footercardtext3 {
+	background-color: black;
+	padding-top: 25px;
+	width: 200px;
+	margin-left: 40px;
+	margin-right: 0px;
+	font-family: helvetica;
+	font-size: 11pt;
+	line-height: 12pt;
+	color: #ff0000;
+}
+.socialmediaicons {
+	background-color: #black;
+	display: flex;
+	margin-top: 67px;
+}
+.socialmediaicons img {
+	width: 45px;
+	height: 45px;
+	margin-right: 10px;
+}
+
+
+
+/*---------------------------------------------------------------------------------
+/* ACCORDION DROP DOWN MENU - "FREQUENTLY ASKED QUESTIONS SECTION" */
+.faqheading {
+	width: 1000px;
+	height: 100px;
+	background-color: #ffffff;
+	font-family: abeatbyKai;
+	font-weight: normal;
+	font-size: 18pt;
+	color: #000000;
+	text-align: center;
+	vertical-align: middle;
+	line-height:70px;
+}	
+.contactusheading {
+	width: 1000px;
+	height: 70px;
+	background-color: #ffffff;
+	font-family: abeatbyKai;
+	font-weight: normal;
+	font-size: 18pt;
+	color: #000000;
+	text-align: center;
+	vertical-align: middle;
+	line-height:15px;
+}	
+.contactusheading2 {
+	width: 1000px;
+	height: 55px;
+	background-color: #ffffff;
+	font-family: abeatbyKai;
+	font-weight: normal;
+	font-size: 18pt;
+	color: #000000;
+	text-align: center;
+	vertical-align: middle;
+	line-height:15px;
+}
+.accordion {
+	background-color: #ffffff;
+	cursor: pointer;
+	padding: 18px;
+	width: 1000px;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-family: helvetica;
+	font-size: 17px;
+	transition: 0.4s;
+	border-top: 2px solid black;
+}
+.contactussubheading {
+	width: 1000px;
+	height: 20px;
+	background-color: #ffffff;
+	font-family: abeatbyKai;
+	font-size: 6pt;
+	color: #ff0000;
+	text-align: center;
+	vertical-align: middle;
+	line-height:5px;
+	padding-bottom: 40px;
+}	
+.active, .accordion:hover {
+	color: #ff0000;
+	font-size: 19px;
+}
+.accordion-wrap {
+	margin: 15px auto;
+	width: 1000px;
+}
+.accordionlast {
+	background-color: #ffffff;
+	color: #000000;
+	cursor: pointer;
+	padding: 18px;
+	width: 1000px;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-family: helvetica;
+	font-size: 17px;
+	transition: 0.4s;
+	border-bottom: 2px solid black;
+	border-top: 2px solid black;
+}
+.active, .accordionlast:hover {
+	color: #ff0000;
+	font-size: 19px;
+	border-bottom: none;
+}
+.panel {
+	padding: 0 18px;
+	display: none;
+	background-color: #ffffff;
+	overflow: hidden;
+	font-family: helvetica;
+	font-style: none;
+	font-size: 15px;
+	color: #000000;
+	margin-bottom: 10px;
+	margin-left: none;
+}
+.contactuspanel {
+	padding: 0 18px;
+	display: none;
+	overflow: hidden;
+	font-family: helvetica;
+	font-size: 13px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+.panelofficialsname {
+	font-style: none;
+	font-size: 13px;
+	color: #000000;
+	font-weight: bold;
+	height: 14px;
+}
+.panelofficialstitle {
+	font-weight: bold;
+	font-size: 13px;
+	color: #FF0000;
+	height: 14px;
+}
+.panelofficialsnumber {
+	font-size: 13px;
+	color: #000000;
+	height: 14px;
+}
+
+
+
+/*---------------------------------------------------------------------------------
+PLUS / NEGATIVE SYMBOL*/
+.accordion:after {
+	font-family: "Font Awesome 5 Free"; 
+	font-weight: 900; 
+	content: "\f067"; /* Unicode character for "plus" sign (+) */
+	font-size: 18px;
+	color: #000000;
+	float: right;
+	margin-left: 5px;
+}
+.accordionlast:after {
+	font-family: "Font Awesome 5 Free"; 
+	font-weight: 900; 
+	content: "\f067"; /* Unicode character for "plus" sign (+) */
+	font-size: 18px;
+	color: #000000;
+	float: right;
+	margin-left: 5px;
+}
+.active:after {
+	font-family: "Font Awesome 5 Free"; 
+	font-weight: 900;
+	content: "\f068"; /* Unicode character for "minus" sign (-) */
+	color: #ff0000;
+}
+.accordian3column {
+	width: 270px;
+	margin-left: none;
+	font-family: helvetica;
+	font-size: 12pt;
+	line-height: 15pt;
+	background: #ffffff;
+	justify-content: left;
+	padding-bottom: 30px;
+}
+
+
+
+/*---------------------------------------------------------------------------------
+PHASES PAGE*/
+.phasescard {
+	width: 270px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-family: helvetica;
+	font-size: 12pt;
+	line-height: 15pt;
+	color: #ffffff;
+}
+.phasescard img {
+	height: 400px;
+}
+
+
+
+/*---------------------------------------------------------------------------------
+JOIN PAGE*/
+.joincard {
+	width: 270px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-family: helvetica;
+	font-size: 12pt;
+	line-height: 15pt;
+	color: #ffffff;
+}
+.joincard img {
+	height: 270px;
+}
+.joinredheadingfont {
+	width: 270px;
+	height: 55px;
+	margin-left: 30px;
+	margin-right: 30px;
+	background-color: black;
+	font-family: abeatbyKai;
+	font-size: 17pt;
+	color: #ff0000;
+	text-align: center;
+	padding-top: 25px;
+}
+.joinredheadingfont2 {
+	background-color: white;
+	width: 270px;
+	height: 55px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-family: abeatbyKai;
+	font-size: 17pt;
+	color: #ff0000;
+	text-align: center;
+	padding-top: 25px;
+}
+.joincardtext {
+	width: 270px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-family: helvetica;
+	font-size: 12pt;
+	line-height: 15pt;
+	color: #ffffff;
+	justify-content: justify;
+	padding-bottom:30px;
+}
+.joincard2 {
+	background-color: white;
+	width: 270px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-family: helvetica;
+	font-size: 12pt;
+	line-height: 15pt;
+	color: #000000;
+}
+.joincard2 img {
+	height: 270px;
+}
+.joincardtext2 {
+	background-color: white;
+	padding-bottom:30px;
+	width: 270px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-family: helvetica;
+	font-size: 12pt;
+	line-height: 15pt;
+	color: #000000;
+	padding-bottom:30px;
+}
+.joinmainheading {
+	width: 1000px;
+	height: 50px;
+	background-color: #000000;
+	font-family: abeatbyKai;
+	font-weight: normal;
+	font-size: 16pt;
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 20px; 
+}
+.joinsubheading {
+	width: 1000px;
+	height: 40px;
+	background-color: #000000;
+	font-family: abeatbyKai;
+	font-weight: normal;
+	font-size: 5pt;
+	color: #ff0000;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 0px; 
+}
+.joinmainheading2 {
+	width: 1000px;
+	height: 50px;
+	background-color: #ffffff;
+	font-family: abeatbyKai;
+	font-weight: normal;
+	font-size: 16pt;
+	color: #000000;
+	text-align: center;
+	vertical-align: middle;
+	line-height:20px;
+}	
+.joinsubheading2 {
+	width: 1000px;
+	height: 40px;
+	background-color: #ffffff;
+	font-family: abeatbyKai;
+	font-size: 5pt;
+	color: #ff0000;
+	text-align: center;
+	vertical-align: middle;
+	line-height:0px;
+}	
+
+
+
+/*---------------------------------------------------------------------------------	
+CIRCLE IMAGE FLIPPING*/
+.imageflipredheadingfont {
+	width: 270px;
+	height: 30px;
+	margin-left: 0;
+	margin-right: 30px;
+	background-color: transparent;
+	font-family: abeatbyKai;
+	font-size: 18pt;
+	color: #ff0000;
+	text-align: center;
+	vertical-align: center;
+	padding-top: 100px;
+}
+.imageflipcardtext {
+	width: 270px;
+	margin-left: 0px;
+	margin-right: 30px;
+	font-family: helvetica;
+	font-size: 13pt;
+	line-height: 15pt;
+	color: #ffffff;
+	justify-content: justify;
+	padding-top: 30px;
+}
+.imageflipcardtext a {
+	color: white;
+	font-size: 13pt;
+}
+.imageflipcardtext2 {
+	width: 270px;
+	margin-left: 0px;
+	margin-right: 30px;
+	font-family: helvetica;
+	font-size: 13pt;
+	line-height: 15pt;
+	color: #000000;
+	justify-content: justify;
+	padding-top: 30px;
+}
+.imageflipcardtext2 a {
+	color: black;
+	font-size: 13pt;
+}
+.flip-box {
+	background-color: transparent;
+	width: 270px;
+	height: 270px;
+	perspective: 1000px;
+}
+.flip-box-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+.flip-box:hover .flip-box-inner {
+	transform: rotateY(180deg);
+}
+.flip-box-front, .flip-box-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.flip-box-front {
+	background-color: #ff000;
+	color: black;
+}
+.flip-box-back {
+	background-color: #ff000;
+	color: white;
+	transform: rotateY(180deg);
+}
+
+
+
+/*---------------------------------------------------------------------------------	
+FORMS*/
+.contactform {
+	width: 1000px;
+	background-color: black;
+	padding-left: 40px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.contactform label {
+	color: white;
+	font-family: 'abeatbyKai';
+	font-size: 17px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	width: 1000px;
+}
+.contactform textarea {
+	height: 150px;
+	width: 900px;
+	padding: 10px;
+	font-family: helvetica;
+	font-size: 15px;
+	margin-top: 5px;
+}
+.contactform input[type=submit], input[type=reset] {
+	background-color: red;
+	border:red;
+	color: white;
+	margin-right: 30px;
+	margin-top: 30px;
+	padding: 15px 45px;
+}
+.contactform input[type=text] {
+	width: 900px;
+	padding: 10px;
+	margin-bottom: 40px;
+	margin-top: 5px;
+}
+
+
+
+/*---------------------------------------------------------------------------------	
+ABOUT PAGE*/
+.aboutcard {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.aboutcard img {
+	height: 270px;
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.aboutcard p {
+	font-family:helvetica;
+	font-size: 17px;
+	color: white;
+	margin-top: none;
+	margin-bottom: 50px;
+}
+.aboutcardtext {
+	width: 270px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-family: helvetica;
+	font-size: 12pt;
+	line-height: 15pt;
+	color: #ffffff;
+	padding-bottom:30px;
+}
+.aboutredheadingfont {
+	background-color: white;
+	width: 270px;
+	height: 55px;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 50px;
+	font-family: abeatbyKai;
+	font-size: 17pt;
+	color: #ff0000;
+	text-align: center;
+	padding-top: 25px;
+}
+.aboutmainheading {
+	width: 1000px;
+	height: 70px;
+	background-color: #000000;
+	font-family: abeatbyKai;
+	font-weight: normal;
+	font-size: 16pt;
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 20px; 
+}
