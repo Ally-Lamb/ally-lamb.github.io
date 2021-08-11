@@ -35,7 +35,7 @@ nav ul {
 }
 a {
 	text-decoration: none;
-	font-family: Lexend Deca;
+	font-family: helvetica;
 	font-size: 11pt;
 	color: #ffffff;
 }
@@ -138,7 +138,7 @@ a:hover {
 	width: 1000px;
 	height: 90px;
 	background-color: #000000;
-	font-family: Lexend Deca;
+	font-family: helvetica;
 	font-weight: normal;
 	font-size: 16pt;
 	color: #ffffff;
@@ -150,7 +150,7 @@ a:hover {
 	width: 1000px;
 	height: 120px;
 	background-color: #ffffff;
-	font-family: Lexend Deca;
+	font-family: helvetica;
 	font-weight: normal;
 	font-size: 18pt;
 	color: #000000;
@@ -168,7 +168,7 @@ a:hover {
 	height: 40px;
 	margin-left: 30px;
 	margin-right: 30px;
-	font-family: abeatbyKai;
+	font-family: helvetica;
 	font-size: 18pt;
 	color: #ff0000;
 }
@@ -178,7 +178,7 @@ a:hover {
 	height: 50px;
 	margin-left: 30px;
 	margin-right: 30px;
-	font-family: Lexend Deca;
+	font-family: helvetica;
 	font-size: 18pt;
 	color: #ff0000;
 }
@@ -307,7 +307,7 @@ section {
 	margin-top: 120px;
 }
 .footerheading {
-	font-family: Lexend Deca;
+	font-family: helvetica;
 	height: 20px;
 	font-size: 18pt;
 	color: #ff0000;
@@ -353,7 +353,7 @@ section {
 	width: 1000px;
 	height: 100px;
 	background-color: #ffffff;
-	font-family: Lexend Deca;
+	font-family: helvetica;
 	font-weight: normal;
 	font-size: 18pt;
 	color: #000000;
@@ -365,7 +365,7 @@ section {
 	width: 1000px;
 	height: 70px;
 	background-color: #ffffff;
-	font-family: Lexend Deca;
+	font-family: helvetica;
 	font-weight: normal;
 	font-size: 18pt;
 	color: #000000;
@@ -377,7 +377,7 @@ section {
 	width: 1000px;
 	height: 55px;
 	background-color: #ffffff;
-	font-family: Lexend Deca;
+	font-family: helvetica;
 	font-weight: normal;
 	font-size: 18pt;
 	color: #000000;
@@ -402,7 +402,7 @@ section {
 	width: 1000px;
 	height: 20px;
 	background-color: #ffffff;
-	font-family: Lexend Deca;
+	font-family: helvetica;
 	font-size: 6pt;
 	color: #ff0000;
 	text-align: center;
@@ -556,7 +556,7 @@ JOIN PAGE*/
 	margin-left: 30px;
 	margin-right: 30px;
 	background-color: black;
-	font-family: Lexend Deca;
+	font-family: helvetica;
 	font-size: 17pt;
 	color: #ff0000;
 	text-align: center;
@@ -568,7 +568,7 @@ JOIN PAGE*/
 	height: 55px;
 	margin-left: 30px;
 	margin-right: 30px;
-	font-family: Lexend Deca;
+	font-family: helvetica;
 	font-size: 17pt;
 	color: #ff0000;
 	text-align: center;
@@ -614,7 +614,7 @@ JOIN PAGE*/
 	width: 1000px;
 	height: 50px;
 	background-color: #000000;
-	font-family: Lexend Deca;
+	font-family: helvetica;
 	font-weight: normal;
 	font-size: 16pt;
 	color: #ffffff;
@@ -626,7 +626,7 @@ JOIN PAGE*/
 	width: 1000px;
 	height: 40px;
 	background-color: #000000;
-	font-family: Lexend Deca;
+	font-family: helvetica;
 	font-weight: normal;
 	font-size: 5pt;
 	color: #ff0000;
@@ -638,7 +638,7 @@ JOIN PAGE*/
 	width: 1000px;
 	height: 50px;
 	background-color: #ffffff;
-	font-family: Lexend Deca;
+	font-family: helvetica;
 	font-weight: normal;
 	font-size: 16pt;
 	color: #000000;
@@ -650,7 +650,7 @@ JOIN PAGE*/
 	width: 1000px;
 	height: 40px;
 	background-color: #ffffff;
-	font-family: Lexend Deca;
+	font-family: helvetica;
 	font-size: 5pt;
 	color: #ff0000;
 	text-align: center;
@@ -668,7 +668,7 @@ CIRCLE IMAGE FLIPPING*/
 	margin-left: 0;
 	margin-right: 30px;
 	background-color: transparent;
-	font-family: Lexend Deca;
+	font-family: helvetica;
 	font-size: 18pt;
 	color: #ff0000;
 	text-align: center;
@@ -752,7 +752,7 @@ FORMS*/
 }
 .contactform label {
 	color: white;
-	font-family: 'abeatbyKai';
+	font-family: helvetica;
 	font-size: 17px;
 	padding-bottom: 10px;
 	padding-top: 10px;
@@ -797,7 +797,7 @@ ABOUT PAGE*/
 	margin-top: 20px;
 }
 .aboutcard p {
-	font-family:helvetica;
+	font-family: helvetica;
 	font-size: 17px;
 	color: white;
 	margin-top: none;
@@ -820,7 +820,7 @@ ABOUT PAGE*/
 	margin-left: 30px;
 	margin-right: 30px;
 	margin-bottom: 50px;
-	font-family: Lexend Deca;
+	font-family: helvetica;
 	font-size: 17pt;
 	color: #ff0000;
 	text-align: center;
@@ -830,7 +830,7 @@ ABOUT PAGE*/
 	width: 1000px;
 	height: 70px;
 	background-color: #000000;
-	font-family: Lexend Deca;
+	font-family: helvetica;
 	font-weight: normal;
 	font-size: 16pt;
 	color: #ffffff;
