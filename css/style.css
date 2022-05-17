@@ -1,370 +1,840 @@
-/* CSS Document for Screens */
+/* Stylesheet for marching wireframe */
 
-/*Import Google Font Open Sans Family*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
-/*Page Font Default Text*/
-body {font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 300; color: #555; margin: 0; padding: 0;}
-
-/*Sets up pages width stretch dimensions*/
-#page {max-width: 1200px; margin: 0 auto; position: relative;}
-
-/* TEXT */
-/*margin: measurements - top right bottom left*/
-h1 {margin:0 0 1em 0; font-size: 2.8em; font-weight: 700;}
-h2 {margin:0 0 .5em 0; font-size: 1.6em; font-weight: 700; line-height: 1.1em;}
-h3 {margin:0 0 .5em 0; font-size: 1.3em; font-weight: 700;}
-h4 {margin:0 0 1.5em 0; font-size: 1em; font-weight: 700;}
-p {margin:0 0 1em 0;}
-a {color:#007eff;}
-a:visited { color: #65b1ff;}
-a.btn {font-size: 1.2em; text-decoration: none; color: #fff; border: 2px solid #cf0004; padding: 4px 15px; transition: background-color .30s;}
-a.btn:hover {background-color: rgba(253, 253, 253, 0.116);}
-
-
-
-/* HEADER */ 
-header {height: 430px; background: url(../images/banner_1200.jpg) no-repeat center bottom; position: relative;}
-header a.logo {
-    z-index: 1;
-    position: absolute; 
-    display: block; 
-    width: 170px; height: 66px;
-    background: url(../images/logo.svg) no-repeat 0 0; 
-    background-size: contain;
-    top: 20px; left: 20px;
+* {
+	box-sizing: border-box;
 }
-header a.logo span {display:none;}
-
-header div.hero {position: absolute; width: 60%; top: 285px; left: 3%; }
-header div.hero h1 {line-height: 1em; margin: 0 0 20px 0; color: #fff;}
+/*---------------------------------------------------------------------------------	
 
 
-/* SECTION - ALL*/
-section {padding: 0 30px;}
-section::after {content:''; display: block; clear: both;}
-
-
-/* SECTION - MAIN*/
-section.main {margin-top: 20px; margin-bottom: 30px; padding: 0;}
-section.main aside {width: 33%; float: left; text-align: center;}
-
-section.main .content {margin: 15px; background: no-repeat center top; background-size: 75px 75px; padding-top: 85px;}
-
-section.main aside h3 a {color: #000; text-decoration: none;}
-section.main aside h3 a:hover {text-decoration: underline;}
-section.main aside p {text-align: justify; font-size:.9em; padding-left: 1em; padding-right: 1em;}
-
-section.main aside .content.uniform {background-image: url(../images/icon_hat.svg);}
-section.main aside .content.who-are-empire {background-image: url(../images/icon_crown.svg);}
-section.main aside .content.sponsors {background-image: url(../images/icon_boot.svg);}
-
-section.atmosphere {background: #000; padding-top: 30px; padding-bottom: 30px; color: #fff;}
-section.atmosphere article {padding: 0px 20px 0px 490px; background: url(../images/keryn-sam.jpg) no-repeat 0 5px; min-height: 260px;}
-section.atmosphere article h2 {color:#cc9900;}
-section.atmosphere article p {font-size: .8em; padding-bottom:1%; text-align: justify;}
-section.atmosphere article a.btn {border-color:#cc9900;}
-
-/* SECTION - HOW-TO*/
-section.how-to {background-color: #cc9900; position: relative;}
-section.how-to aside {width: 30%; float: right; margin-left: 30px;}
-section.how-to aside .content {padding: 30px 0px 20px 0;  display: block;}
-section.how-to aside .content img {display: block; margin-bottom: 15px; width: 100%; border-radius: 25px 0px 25px 0px;}
-section.how-to aside .content iframe {display: block; margin-bottom: 15px; height: 180px; width: 100%; border-radius: 25px 0px 25px 0px;}
-
-section.how-to aside .content h4 {margin-bottom: 0; color: #fff;}
-section.how-to aside .content p {margin-bottom: .5em; color: #000;}
-section.how-to aside .content a {display: inline-block; color: #000; font-weight: 700; font-size: .80em;}
-
-section.how-to blockquote {margin: 0; width: 35%; color: #fff; background-color: #b68a05; position: absolute; top: 9%; left: 0%; border-radius: 0px 30px 30px 0px;}
-section.how-to blockquote p {margin: 30px 30px 20px 60px;}
-section.how-to blockquote p.quote {font-style: italic; font-size: 1.2em;}
-section.how-to blockquote p.credit {color: #000; font-size: .9em; margin-top: 0; padding-left: 20px; line-height: 1.5em; position: relative;}
-
-/*big starter quotation marks for blockquote*/
-section.how-to blockquote::before {
-    content:'\201c'; 
-    color: #f0b400;
-    position: absolute;
-    top: 10px; left: 15px;
-    font-size: 5em;
-    font-family: serif;
+/*---------------------------------------------------------------------------------
+/* Search Bar - Navigation List - Home - Join - About - Phases - Contact */
+header {
+	background-color: #000000;
+	width: 1000px;
+	margin: 0 auto;
+	line-height: 10px;
 }
-/*last ending quotation mark for blockquote*/
-section.how-to blockquote p.quote::after {content:'\201d'; font-family: serif;}
-
-/*Line before "Author Name"*/
-section.how-to blockquote p.credit::before {content:'\2014'; position: absolute; top: -1px; left: 0;}
-
-
-/*___________________________________________________________________________________________*/
-/*NAVIGATION BAR*/
 nav {
-    background-color: rgba(0,0,0,.65);
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    padding: 20px 0 0 0;
-    width: 100%;
+	height: 70px
 }
-nav::after {content:''; display: block; clear: both;}
-
-nav ul {list-style: none; margin: 0; padding: 0px;}
-
-nav ul li:hover {background-color: #2b0306;}
-nav ul li:hover > ul {display: block;}
-
-nav ul li a {
-    display:inline-block; 
-    color: #fff; 
-    padding: 10px 20px; 
-    text-decoration: none; 
-    width: 170px;
-    position: relative;
+nav ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	padding: 15px;
 }
-nav ul li a:visited {color:#fff;}
-nav ul li a:hover {background-color: rgba(0,0,0,.90); color: #cc9900; font-weight: bold;}
-
-nav ul ul {position: absolute; top: 100%; background-color: rgba(0,0,0,.80); display: none;}
-nav ul ul li {position: relative;}
-nav ul ul ul {left: 100%; top: 0px;}
-
-/*Top Level*/
-nav > ul {padding-left: 250px;}
-nav > ul > li {float: left;}
-nav > ul > li > a {width: auto; padding: 10px 50px 15px 20px;}
-
-nav a[aria-haspopup="true"]::after {
-    content: '';
-    display: block;
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    top: 16px;
-    right: 15px;
-/*Arrow*/
-    border-top:4px solid transparent;
-    border-bottom: 4px solid transparent;
-    border-left: 4px solid #fff;
+.navform {
+	padding-top: 10px;
+	padding-left: 7px;
 }
-/*Pointing Arrow Down*/
-nav > ul > li > a[aria-haspopup="true"]::after {
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-top: 4px solid #cf0004;
-    left: 20px;
-    right: auto;
-    bottom: 6px;
-    top: auto;
+.navtext {
+	padding: 15px;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+}
+a {
+	text-decoration: none;
+	font-family: abeatbyKai;
+	font-size: 11pt;
+	color: #ffffff;
+}
+a:hover {
+	color: red;
+	font-size: 13pt;
 }
 
 
-/*___________________________________________________________________________________________*/
-/*FOOTER*/
-footer {font-size: .8em; margin: 30px 30px 30px 5px; color:#cc9900; font-weight: bold;}
-footer .content {display: inline;}
-footer a {margin-left: 30px; color: #000;}
-footer a:visited {color: #000;}
-footer a:hover {color: #cc9900;}
-
-
-/*___________________________________________________________________________________________*/
-/*MEDIA QUERIES - FOR RESIZING*/
-@media screen and (max-width: 1000px) {
-    h1{font-size: 2.4em;}
-
-    /*Header*/
-    header div.hero {left: 3%;}
-    header div.hero h1 {margin-bottom: 20px;}
-   
-    /*Section - How-To*/
-    section.how-to aside .content iframe {height: 147px;}
-
-    /*Section - Atmosphere*/
-    section.atmosphere article {padding-left: 380px; background-size: 355px auto; font-size: .99em;}
+/*---------------------------------------------------------------------------------
+/* MARCHING CANTERBURY LOGO */
+.logo {
+	background-color: #ffffff;
+	height: 60px;
+	padding-top: 30px;
+	padding-bottom: 0px;
 }
-/*___________________________________________________________________________________________*/
-@media screen and (max-width: 825px) {
-    h1{font-size: 1.7em;}
-    a.btn {font-size: .8em;}
-
-    /*Header*/
-    header  {height: 300px; background-image: url(../images/banner_825.jpg);}
-    header div.hero {top: 200px; left: 3%;}
-    header div.hero h1 {margin-bottom: 10px;}
-
-    /*Section - Atmosphere*/
-    section.atmosphere article {padding-left: 285px; background-size: 270px auto; font-size: .8em;}
-    
-    /*Section - How To*/
-    section.how-to blockquote p.quote {font-size: 1.1em; line-height: 1.2em;}
-    section.how-to blockquote p.credit {font-size: .85em;}
-    section.how-to aside .content iframe {height: 120px;}
-
-    /*Nav*/
-    nav {padding-top: 20px;}
-    nav > ul {padding-left: 200px;}
-    nav ul li a {font-size: .9em;}
-}
-/*___________________________________________________________________________________________*/
-@media screen and (max-width: 760px) {
-
-    h1{font-size: 1.8em;}
-    h2{font-size: 1.4em;}
-    h3{font-size: 1.1em;}
-    a.btn {font-size: .8em;}
-
-    /*Header*/
-    header a.logo {width: 100px; height: 60px;}
-    header div.hero {top: 190px; left: 3%;}
-    header div.hero h1 {margin-bottom: 10px;}
-    
-    /*Section - Main*/
-    section.main {margin-top: 10px; margin-bottom: 10px;}
-    section.main aside div.content {background-size: 55px 55px; padding-top: 60px;}
-
-    /*Section - How-To*/
-    section.how-to aside div.content img {width: 100%;}
-    section.how-to aside .content iframe {height: 100px;}
-
-    section.how-to aside .content {padding: 30px 0px 20px 20px;}
-    section.how-to blockquote p.quote {font-size: 1em;}
-    section.how-to blockquote p.credit {font-size: .7em; margin-top: 0; padding-left: 20px; line-height: 1.5em; ;}
-
-
-    /*Nav*/
-    nav {padding-top: 10px;}
-    nav > ul {padding-left: 140px;}
-    
-    }
-/*___________________________________________________________________________________________*/
-/*Shrinking for Phones - Stacking Code*/
-@media screen and (max-width: 625px) {
-    h1 {font-size: 1.5em;}
-    h3 {margin-bottom: 0px;}
-    a.btn {font-size: .7em;}
-
-    /*Header*/
-    header {height: 294px; background-image: url(../images/banner_625.jpg); background-position: left top;}
-    header a.logo {width: 100%; height: 50px; left: 0px; top: 0px; background-color: rgba(0, 0, 0, .65); background-size: 112px 46px; background-position: 20px center;}
-    header div.hero {width: 300px; top: 190px; left: 20px;}
-    header div.hero h1 {margin-bottom: 7px;}
-    
-    /*Section - Main*/
-    section.main aside {width: 100%; float: none; text-align: left;}
-    section.main aside div.content {
-        margin: 8px 20px 8px 0px;
-        padding: 5px 0px 10px 85px;
-        background-size: 50px 50px;
-        background-position: 20px 5px;
-    }
-    section.main aside div.content a {
-        padding-left: 15px;
-    }
-
-    /*Section - Atmosphere*/
-    section.atmosphere article {text-align: center; padding: 230px 0px 0px 0px; background-size: auto 215px;background-position-x: center; min-height: initial;}
-
-    /*Section - How-To*/
-    section.how-to aside {width: 100%; float:none; margin: 0; position: relative;}
-    section.how-to aside div.content {padding: 30px 0px 50px 53%;}
-    section.how-to aside div.content p {font-size: .9em;}
-    section.how-to aside div.content img {
-        display: inline-block;
-        width: 47%;
-        position: absolute;
-        top: 30px;
-        left: 0px;
-    }   
-    section.how-to aside div.content iframe {
-        display: inline-block;
-        width: 47%;
-        height: 140px;
-        position: absolute;
-        top: 30px;
-        left: 0px;
-    }   
-
-    section.how-to blockquote {
-        margin: 40px 0px 0px 0px;
-        width: 100%;
-        padding: 1px 0px 20px 0px;
-        position: relative;
-        border-radius: 30px 30px 0px 0px;
-    }
-    section.how-to blockquote p.credit {margin-bottom: 0;}
-       
-    /*Nav*/
-    nav {position: static; width: auto; padding: 20px 15px; background-color: #000;}
-
-    nav ul,
-    nav ul ul,
-    nav ul ul ul {display: block; position: static;}
-
-    nav > ul {padding: 0;}
-    nav > ul > li {float: none; margin-top: 25px;}
-
-    nav ul li:hover {background: none;}
-    nav ul li a {
-        display: block;
-        margin: 8px 10px;
-        padding: 8px 15px;
-        border: 1px solid rgba(255,255,255,.25);
-    }
-    
-    nav ul li a:hover {background:rgba(255,255,255,.25, .2);}
-
-    nav ul ul {background: none;}
-    nav ul ul li a {margin-left: 30px; display: block;}
-    nav ul ul ul li a {margin-left: 60px;}
-
-    /*Triangle change*/
-    nav a [aria-haspopup="true"]::after {display: none;}
-    nav > ul > li > a[aria-haspopup="true"]::after {
-        border-left: 4px solid transparent;
-        border-right: 4px solid transparent;
-        border-top: 4px solid #fff;
-        left: auto;
-        right: 15px;
-        bottom: 10px;
-        top: auto;
-    }
-
-    /*Footer change*/
-    footer {text-align: center;}
-    footer div.content {display: block; float: centre;}
-}
-/*___________________________________________________________________________________________*/
-@media screen and (max-width: 425px) {
-    /*Header*/
-    header {height: 195px; background-image: url(../images/banner_425.jpg);}
-
-    header a.logo {
-        height: 36px; background: rgba(0,0,0,.65) url(../images/logo_small.svg) no-repeat center center;
-        background-size: 126px 17px;
-    }
-    header div.hero {width: 100%; left: 0px; top: 120px; text-align: center;}
-    header div.hero h1 {font-size: 1.3em; margin-bottom: .1px;}
-    header div.hero a.btn {padding: 0px 20px; font-size: .5em;}
-    header div.hero a.btn span {display: none;}
-
-    /*Section - Atmosphere*/
-    section.atmosphere article {background-size: auto 190px;}
-
-    /*Section - How-To*/
-    section.how-to aside div.content {padding: 240px 0px 0px 0px; text-align: center;}
-    section.how-to aside div.content img {width: 100%; height: 196px;} 
-    section.how-to aside div.content iframe {width: 100%; height: 200px;} 
-
-    section.how-to blockquote {margin: 30px 0px 0px 0px; width: 100%;}
-
-    /*Footer*/
-    footer::after {content:''; display: block; clear: both;}
-    footer div.content a {
-        display: inline-block; margin: 0px 10px 10px 10px;
-        clear: both;
-    }
+.logo img {
+	width: 280px;
+	position: absolute;
+	z-index: 99;
 }
 
 
 
+/*---------------------------------------------------------------------------------
+/*BANNER CONTAINER */
+.banner {
+	width: 1000px;
+	margin: 0 auto;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+}
+.banner img {
+	height: 500px;
+}
+.banner video {
+	width: 1000px;
+}
+
+
+
+/*---------------------------------------------------------------------------------
+/* VIDEO BANNER */
+.videobanner {
+	width: 1000px;
+	height: 560px;
+	margin: 0 auto;
+	list-style-type: none;
+	position: relative;
+}
+.videobanner img {
+	width: 1000px;
+}
+.videobanner video {
+	width: 1000px;
+	position: absolute;
+}
+
+
+
+/*---------------------------------------------------------------------------------
+/* CONTACT US BUTTON */
+.btn {
+	border: none;
+	color: white;
+	padding: 12px 28px;
+	cursor: pointer;
+	border-radius: 9px;
+	border: 1px solid #c30000;
+	position: absolute;
+	margin:60px;
+	margin-top: 37px;
+}
+.contactus {
+	background-color: #ff0000;
+} 
+.contactus a {
+	font-family:helvetica;
+	font-size: 15px;
+	color: white;
+}
+.contactus:hover {
+	background: #c30000;
+	left: -2px;
+	position: absolute;
+}
+.contactus:hover a {
+	font-family:helvetica;
+	font-size: 17px;
+	color: white;	
+}
+
+
+
+/*---------------------------------------------------------------------------------
+/* MAIN PAGE TITLE "Welcome to Marching Canterbury" */
+.mainheading {
+	width: 1000px;
+	height: 90px;
+	background-color: #000000;
+	font-family: abeatbyKai;
+	font-weight: normal;
+	font-size: 16pt;
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 20px; 
+}
+.mainheading2 {
+	width: 1000px;
+	height: 120px;
+	background-color: #ffffff;
+	font-family: abeatbyKai;
+	font-weight: normal;
+	font-size: 18pt;
+	color: #000000;
+	text-align: center;
+	vertical-align: middle;
+	line-height:70px;
+}	
+
+
+
+/*---------------------------------------------------------------------------------
+/* RED HEADING FONTS */
+.redheadingfont {
+	width: 270px;
+	height: 40px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-family: abeatbyKai;
+	font-size: 18pt;
+	color: #ff0000;
+}
+.redheadingfont2 {
+	background-color: white;
+	width: 270px;
+	height: 50px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-family: abeatbyKai;
+	font-size: 18pt;
+	color: #ff0000;
+}
+
+
+
+/*---------------------------------------------------------------------------------
+/* RED LINE GRAPHIC SETTINGS */
+.redline {
+	width: 1000px;
+	height: 100px;
+	position: relative;
+}
+.redline img {
+	width: 1000px;
+	height: 100px;
+}
+.thankyouredline {
+	width: 1000px;
+	height: 100px;
+	background-color: white;
+}
+.thankyouredline img {
+	width: 1000px;
+	height: 100px;
+}
+.thankyouredblackline {
+	width: 1000px;
+	height: 33px;
+	background-color: white;
+}
+.thankyouredblackline img {
+	width: 1000px;
+	height: 100px;
+}
+.thankyouredblackline {
+	width: 1000px;
+	height: 33px;
+	background-color: white;
+}
+.thankyouredblackline img {
+	width: 1000px;
+	height: 100px;
+}
+
+
+
+/*---------------------------------------------------------------------------------
+/* SECTION 1 */
+section {
+	background-color: #000000;
+	width: 1000px;
+	margin: 0 auto;
+	list-style-type: none;
+	display: flex;
+	justify-content: center-left;
+}
+.card {
+	width: 270px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-family: helvetica;
+	font-size: 12pt;
+	line-height: 15pt;
+	color: #ffffff;
+}
+.card img {
+	height: 270px;
+}
+.cardtext {
+	width: 270px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-family: helvetica;
+	font-size: 12pt;
+	line-height: 15pt;
+	color: #ffffff;
+	justify-content: justify;
+	padding-bottom: 80px;
+	position: relative;
+}
+
+
+
+/*---------------------------------------------------------------------------------
+/* SECTION 2 */
+.section2 {
+	background-color: white;
+	width: 1000px;
+	margin: 0 auto;
+	list-style-type: none;
+	display: flex;
+	justify-content: center-left;
+}
+.card2 {
+	background-color: white;
+	width: 270px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-family: helvetica;
+	font-size: 12pt;
+	line-height: 15pt;
+	color: #000000;
+}
+.card2 img {
+	height: 270px;
+}
+.cardtext2 {
+	background-color: white;
+	padding-bottom:30px;
+	width: 270px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-family: helvetica;
+	font-size: 12pt;
+	line-height: 15pt;
+	color: #000000;
+}
+
+
+
+/*---------------------------------------------------------------------------------
+/* FOOTER */
+
+.footer-justification {
+	margin-top: 120px;
+}
+.footerheading {
+	font-family: abeatbyKai;
+	height: 20px;
+	font-size: 18pt;
+	color: #ff0000;
+	justify-content: justify-left;
+}
+.footersection3 {
+	background-color: black;
+	padding-top: 35px;
+	height: 250px;
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 50px;
+	list-style-type: none;
+	display: flex;
+}
+.footercardtext3 {
+	background-color: black;
+	padding-top: 25px;
+	width: 200px;
+	margin-left: 40px;
+	margin-right: 0px;
+	font-family: helvetica;
+	font-size: 11pt;
+	line-height: 12pt;
+	color: #ff0000;
+}
+.socialmediaicons {
+	background-color: #black;
+	display: flex;
+	margin-top: 67px;
+}
+.socialmediaicons img {
+	width: 45px;
+	height: 45px;
+	margin-right: 10px;
+}
+
+
+
+/*---------------------------------------------------------------------------------
+/* ACCORDION DROP DOWN MENU - "FREQUENTLY ASKED QUESTIONS SECTION" */
+.faqheading {
+	width: 1000px;
+	height: 100px;
+	background-color: #ffffff;
+	font-family: abeatbyKai;
+	font-weight: normal;
+	font-size: 18pt;
+	color: #000000;
+	text-align: center;
+	vertical-align: middle;
+	line-height:70px;
+}	
+.contactusheading {
+	width: 1000px;
+	height: 70px;
+	background-color: #ffffff;
+	font-family: abeatbyKai;
+	font-weight: normal;
+	font-size: 18pt;
+	color: #000000;
+	text-align: center;
+	vertical-align: middle;
+	line-height:15px;
+}	
+.contactusheading2 {
+	width: 1000px;
+	height: 55px;
+	background-color: #ffffff;
+	font-family: abeatbyKai;
+	font-weight: normal;
+	font-size: 18pt;
+	color: #000000;
+	text-align: center;
+	vertical-align: middle;
+	line-height:15px;
+}
+.accordion {
+	background-color: #ffffff;
+	cursor: pointer;
+	padding: 18px;
+	width: 1000px;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-family: helvetica;
+	font-size: 17px;
+	transition: 0.4s;
+	border-top: 2px solid black;
+}
+.contactussubheading {
+	width: 1000px;
+	height: 20px;
+	background-color: #ffffff;
+	font-family: abeatbyKai;
+	font-size: 6pt;
+	color: #ff0000;
+	text-align: center;
+	vertical-align: middle;
+	line-height:5px;
+	padding-bottom: 40px;
+}	
+.active, .accordion:hover {
+	color: #ff0000;
+	font-size: 19px;
+}
+.accordion-wrap {
+	margin: 15px auto;
+	width: 1000px;
+}
+.accordionlast {
+	background-color: #ffffff;
+	color: #000000;
+	cursor: pointer;
+	padding: 18px;
+	width: 1000px;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-family: helvetica;
+	font-size: 17px;
+	transition: 0.4s;
+	border-bottom: 2px solid black;
+	border-top: 2px solid black;
+}
+.active, .accordionlast:hover {
+	color: #ff0000;
+	font-size: 19px;
+	border-bottom: none;
+}
+.panel {
+	padding: 0 18px;
+	display: none;
+	background-color: #ffffff;
+	overflow: hidden;
+	font-family: helvetica;
+	font-style: none;
+	font-size: 15px;
+	color: #000000;
+	margin-bottom: 10px;
+	margin-left: none;
+}
+.contactuspanel {
+	padding: 0 18px;
+	display: none;
+	overflow: hidden;
+	font-family: helvetica;
+	font-size: 13px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+.panelofficialsname {
+	font-style: none;
+	font-size: 13px;
+	color: #000000;
+	font-weight: bold;
+	height: 14px;
+}
+.panelofficialstitle {
+	font-weight: bold;
+	font-size: 13px;
+	color: #FF0000;
+	height: 14px;
+}
+.panelofficialsnumber {
+	font-size: 13px;
+	color: #000000;
+	height: 14px;
+}
+
+
+
+/*---------------------------------------------------------------------------------
+PLUS / NEGATIVE SYMBOL*/
+.accordion:after {
+	font-family: "Font Awesome 5 Free"; 
+	font-weight: 900; 
+	content: "\f067"; /* Unicode character for "plus" sign (+) */
+	font-size: 18px;
+	color: #000000;
+	float: right;
+	margin-left: 5px;
+}
+.accordionlast:after {
+	font-family: "Font Awesome 5 Free"; 
+	font-weight: 900; 
+	content: "\f067"; /* Unicode character for "plus" sign (+) */
+	font-size: 18px;
+	color: #000000;
+	float: right;
+	margin-left: 5px;
+}
+.active:after {
+	font-family: "Font Awesome 5 Free"; 
+	font-weight: 900;
+	content: "\f068"; /* Unicode character for "minus" sign (-) */
+	color: #ff0000;
+}
+.accordian3column {
+	width: 270px;
+	margin-left: none;
+	font-family: helvetica;
+	font-size: 12pt;
+	line-height: 15pt;
+	background: #ffffff;
+	justify-content: left;
+	padding-bottom: 30px;
+}
+
+
+
+/*---------------------------------------------------------------------------------
+PHASES PAGE*/
+.phasescard {
+	width: 270px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-family: helvetica;
+	font-size: 12pt;
+	line-height: 15pt;
+	color: #ffffff;
+}
+.phasescard img {
+	height: 400px;
+}
+
+
+
+/*---------------------------------------------------------------------------------
+JOIN PAGE*/
+.joincard {
+	width: 270px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-family: helvetica;
+	font-size: 12pt;
+	line-height: 15pt;
+	color: #ffffff;
+}
+.joincard img {
+	height: 270px;
+}
+.joinredheadingfont {
+	width: 270px;
+	height: 55px;
+	margin-left: 30px;
+	margin-right: 30px;
+	background-color: black;
+	font-family: abeatbyKai;
+	font-size: 17pt;
+	color: #ff0000;
+	text-align: center;
+	padding-top: 25px;
+}
+.joinredheadingfont2 {
+	background-color: white;
+	width: 270px;
+	height: 55px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-family: abeatbyKai;
+	font-size: 17pt;
+	color: #ff0000;
+	text-align: center;
+	padding-top: 25px;
+}
+.joincardtext {
+	width: 270px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-family: helvetica;
+	font-size: 12pt;
+	line-height: 15pt;
+	color: #ffffff;
+	justify-content: justify;
+	padding-bottom:30px;
+}
+.joincard2 {
+	background-color: white;
+	width: 270px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-family: helvetica;
+	font-size: 12pt;
+	line-height: 15pt;
+	color: #000000;
+}
+.joincard2 img {
+	height: 270px;
+}
+.joincardtext2 {
+	background-color: white;
+	padding-bottom:30px;
+	width: 270px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-family: helvetica;
+	font-size: 12pt;
+	line-height: 15pt;
+	color: #000000;
+	padding-bottom:30px;
+}
+.joinmainheading {
+	width: 1000px;
+	height: 50px;
+	background-color: #000000;
+	font-family: abeatbyKai;
+	font-weight: normal;
+	font-size: 16pt;
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 20px; 
+}
+.joinsubheading {
+	width: 1000px;
+	height: 40px;
+	background-color: #000000;
+	font-family: abeatbyKai;
+	font-weight: normal;
+	font-size: 5pt;
+	color: #ff0000;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 0px; 
+}
+.joinmainheading2 {
+	width: 1000px;
+	height: 50px;
+	background-color: #ffffff;
+	font-family: abeatbyKai;
+	font-weight: normal;
+	font-size: 16pt;
+	color: #000000;
+	text-align: center;
+	vertical-align: middle;
+	line-height:20px;
+}	
+.joinsubheading2 {
+	width: 1000px;
+	height: 40px;
+	background-color: #ffffff;
+	font-family: abeatbyKai;
+	font-size: 5pt;
+	color: #ff0000;
+	text-align: center;
+	vertical-align: middle;
+	line-height:0px;
+}	
+
+
+
+/*---------------------------------------------------------------------------------	
+CIRCLE IMAGE FLIPPING*/
+.imageflipredheadingfont {
+	width: 270px;
+	height: 30px;
+	margin-left: 0;
+	margin-right: 30px;
+	background-color: transparent;
+	font-family: abeatbyKai;
+	font-size: 18pt;
+	color: #ff0000;
+	text-align: center;
+	vertical-align: center;
+	padding-top: 100px;
+}
+.imageflipcardtext {
+	width: 270px;
+	margin-left: 0px;
+	margin-right: 30px;
+	font-family: helvetica;
+	font-size: 13pt;
+	line-height: 15pt;
+	color: #ffffff;
+	justify-content: justify;
+	padding-top: 30px;
+}
+.imageflipcardtext a {
+	color: white;
+	font-size: 13pt;
+}
+.imageflipcardtext2 {
+	width: 270px;
+	margin-left: 0px;
+	margin-right: 30px;
+	font-family: helvetica;
+	font-size: 13pt;
+	line-height: 15pt;
+	color: #000000;
+	justify-content: justify;
+	padding-top: 30px;
+}
+.imageflipcardtext2 a {
+	color: black;
+	font-size: 13pt;
+}
+.flip-box {
+	background-color: transparent;
+	width: 270px;
+	height: 270px;
+	perspective: 1000px;
+}
+.flip-box-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+.flip-box:hover .flip-box-inner {
+	transform: rotateY(180deg);
+}
+.flip-box-front, .flip-box-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.flip-box-front {
+	background-color: #ff000;
+	color: black;
+}
+.flip-box-back {
+	background-color: #ff000;
+	color: white;
+	transform: rotateY(180deg);
+}
+
+
+
+/*---------------------------------------------------------------------------------	
+FORMS*/
+.contactform {
+	width: 1000px;
+	background-color: black;
+	padding-left: 40px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.contactform label {
+	color: white;
+	font-family: 'abeatbyKai';
+	font-size: 17px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	width: 1000px;
+}
+.contactform textarea {
+	height: 150px;
+	width: 900px;
+	padding: 10px;
+	font-family: helvetica;
+	font-size: 15px;
+	margin-top: 5px;
+}
+.contactform input[type=submit], input[type=reset] {
+	background-color: red;
+	border:red;
+	color: white;
+	margin-right: 30px;
+	margin-top: 30px;
+	padding: 15px 45px;
+}
+.contactform input[type=text] {
+	width: 900px;
+	padding: 10px;
+	margin-bottom: 40px;
+	margin-top: 5px;
+}
+
+
+
+/*---------------------------------------------------------------------------------	
+ABOUT PAGE*/
+.aboutcard {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.aboutcard img {
+	height: 270px;
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.aboutcard p {
+	font-family:helvetica;
+	font-size: 17px;
+	color: white;
+	margin-top: none;
+	margin-bottom: 50px;
+}
+.aboutcardtext {
+	width: 270px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-family: helvetica;
+	font-size: 12pt;
+	line-height: 15pt;
+	color: #ffffff;
+	padding-bottom:30px;
+}
+.aboutredheadingfont {
+	background-color: white;
+	width: 270px;
+	height: 55px;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 50px;
+	font-family: abeatbyKai;
+	font-size: 17pt;
+	color: #ff0000;
+	text-align: center;
+	padding-top: 25px;
+}
+.aboutmainheading {
+	width: 1000px;
+	height: 70px;
+	background-color: #000000;
+	font-family: abeatbyKai;
+	font-weight: normal;
+	font-size: 16pt;
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 20px; 
+}
